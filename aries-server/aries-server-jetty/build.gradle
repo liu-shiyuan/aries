@@ -1,0 +1,9 @@
+dependencies {
+
+compile (
+	libraries.'websocket-server',
+	libraries.'jetty-server',
+	libraries.'jetty-annotations'
+)
+
+}

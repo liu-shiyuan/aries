@@ -1,2 +1,3 @@
 
 rootProject.name = 'aries'
+include 'aries-server-jetty'

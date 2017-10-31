@@ -1,0 +1,9 @@
+ext.versions = [
+	jetty : '9.3.21.v20170918',
+]
+
+ext.libraries = [
+	"jetty-server" : "org.eclipse.jetty:jetty-server:${versions.jetty}",
+	"jetty-annotations" : "org.eclipse.jetty:jetty-annotations:${versions.jetty}",
+	"websocket-server" : "org.eclipse.jetty.websocket:websocket-server:${versions.jetty}"
+]
