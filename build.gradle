@@ -16,9 +16,11 @@ subprojects {
 	
 	dependencies {
 	    compile (
-	    	'com.google.guava:guava:23.2-jre',
-	   		'org.apache.commons:commons-collections4:4.1',
-	   		'org.slf4j:slf4j-log4j12:1.7.25',
+	    	libraries.'guava',
+	    	libraries.'commons-collections4',
+	   		libraries.'slf4j-log4j12',
+	   		libraries.'commons-lang3',
+	   		
 	   	)
 	    testCompile (
 	    	'junit:junit:4.12',

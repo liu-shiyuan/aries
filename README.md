@@ -1,2 +1,2 @@
 # aries
-small web framework
+for learning how to use gradle.
