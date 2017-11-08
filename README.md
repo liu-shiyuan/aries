@@ -1,2 +1,2 @@
 # aries
-for learning how to use gradle.
+small practice for learning how to use gradle.

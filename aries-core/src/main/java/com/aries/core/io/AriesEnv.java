@@ -42,6 +42,9 @@ public class AriesEnv extends AbstractAriesProperties {
 		}*/
 		AriesEnv e = new AriesEnv();
 		System.out.println(e.getProperty("x"));
+		System.out.println(e.getProperty("n", Integer.class));
+		int a = e.getProperty("d", Integer.class);
+		System.out.println(a);
 	}
 
 }
