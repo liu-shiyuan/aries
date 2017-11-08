@@ -1,3 +1,6 @@
 dependencies {
-	compile project(':aries-core')
+	compile project(':aries-core'),
+	compile(
+		libraries.'javax.servlet',
+	)
 }

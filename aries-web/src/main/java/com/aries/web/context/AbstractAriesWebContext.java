@@ -8,7 +8,7 @@ public abstract class AbstractAriesWebContext implements AriesWebContext {
 	private AriesProperties env;
 	
 	protected AbstractAriesWebContext() {
-		initEnvironment();
+		initSettings();
 	}
 	
 	@Override
@@ -17,7 +17,7 @@ public abstract class AbstractAriesWebContext implements AriesWebContext {
 	}
 	
 	@Override
-	public void initEnvironment() {
+	public void initSettings() {
 		env = new AriesEnv();
 	}
 	

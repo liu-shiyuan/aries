@@ -6,6 +6,6 @@ public interface AriesWebContext {
 	
 	AriesProperties getEnv();
 	
-	void initEnvironment();
+	void initSettings();
 	
 }
