@@ -1,4 +1,4 @@
-package com.arie.test.jetty.controller;
+package com.aries.test.jetty.controller;
 
 import java.io.PrintWriter;
 
@@ -16,7 +16,7 @@ public class TestController extends AbstractController {
         response.setStatus(HttpServletResponse.SC_OK);
 
         try (PrintWriter out = response.getWriter()) {
-        	out.println("<h1>" + "new Project to Route here to say Hello World!!" + "</h1>");
+        	out.println("<h1>" + "Bug found" + "</h1>");
         } catch (Exception e) {
         }
         

@@ -1,3 +1,15 @@
 dependencies {
 	compile project(':aries-server:aries-server-jetty')
 }
+
+jar {
+    manifest {
+        attributes(
+                "Manifest-Version": 1.0,
+                "Main-Class": "com.aries.test.jetty.server.JettyServerTest")
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    into('assets') {
+        from 'assets'
+    }
+}

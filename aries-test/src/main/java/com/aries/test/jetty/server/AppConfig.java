@@ -7,7 +7,7 @@ public class AppConfig extends Config {
 	@Override
 	public String[] getHandlerPackages() {
 		return new String[] {
-				"com.arie.server.jetty.controller"
+				"com.aries.test.jetty.controller"
 		};
 	}
 

@@ -42,7 +42,7 @@ public class JettyServer extends AbstractAriesServer<JettySettings> {
 		Filter f = getAriesFilter();
 		FilterHolder filterHolder = new FilterHolder(f);
 		ServletContextHandler handler = new ServletContextHandler();
-		// ������Ե���˼���ɸù�������������Դ��ͨ��ʲô���ķ�ʽ���ʵ��ģ�����������ת��������ʽ���󡢰����ȣ�Ĭ��ΪREQUEST
+		// 这个属性的意思是由该过滤器管理的资源是通过什么样的方式访问到的，可以是请求、转发、声明式错误、包含等，默认为REQUEST
 		EnumSet<DispatcherType> dispatches = EnumSet.of(DispatcherType.REQUEST);
 		handler.addFilter(filterHolder, "/*", dispatches);
 		
