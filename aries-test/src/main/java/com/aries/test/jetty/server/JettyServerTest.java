@@ -1,6 +1,7 @@
-package com.aries.server.jetty.server;
+package com.aries.test.jetty.server;
 
 import com.aries.server.jetty.context.JettyContext;
+import com.aries.server.jetty.server.JettyServer;
 import com.aries.web.server.AriesServer;
 
 public class JettyServerTest {

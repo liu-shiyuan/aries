@@ -11,6 +11,7 @@ import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
+import com.aries.web.context.AriesContextListener;
 import com.aries.web.context.AriesWebContext;
 import com.aries.web.server.AbstractAriesServer;
 
@@ -44,6 +45,8 @@ public class JettyServer extends AbstractAriesServer<JettySettings> {
 		// 这个属性的意思是由该过滤器管理的资源是通过什么样的方式访问到的，可以是请求、转发、声明式错误、包含等，默认为REQUEST
 		EnumSet<DispatcherType> dispatches = EnumSet.of(DispatcherType.REQUEST);
 		handler.addFilter(filterHolder, "/*", dispatches);
+		
+		handler.addEventListener(new AriesContextListener(getContext()));
 		
 		server.setHandler(handler);
 		

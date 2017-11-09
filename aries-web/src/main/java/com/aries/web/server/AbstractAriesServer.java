@@ -48,7 +48,8 @@ public abstract class AbstractAriesServer<T extends ServerSettings> implements A
 	}
 	
 	private Filter createAriesFilter() {
-		return new AriesFilter();
+		AriesFilter filter = new AriesFilter();
+		return filter;
 	}
 	
 }

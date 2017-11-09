@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.aries.core.annotation.Config;
+
 public class TAnnotation {
 
 	public static List<Method> g(Class<?> clazz) {
@@ -55,14 +57,14 @@ public class TAnnotation {
             parentPaths = q(c.getSuperclass());
         }
         Set<String> paths = new LinkedHashSet<>();
-        XXXX a = c.getAnnotation(XXXX.class);
+        Config a = c.getAnnotation(Config.class);
         
-        if (a != null) 
+      /*  if (a != null) 
         	if (parentPaths.isEmpty())
         		paths.add(a.value());
         	else 
         		for (String s : parentPaths)
-        			paths.add(s + a.value());
+        			paths.add(s + a.value());*/
         
 
         return paths;

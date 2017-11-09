@@ -1,6 +1,7 @@
 dependencies {
-	compile project(':aries-core'),
 	compile(
 		libraries.'javax.servlet',
+		libraries.'reflections',
 	)
+	compile project(':aries-core')
 }
