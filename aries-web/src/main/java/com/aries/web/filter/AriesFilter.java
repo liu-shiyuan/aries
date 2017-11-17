@@ -72,5 +72,12 @@ public class AriesFilter implements Filter {
 		dispatcher.init(config);
 		return dispatcher;
 	}
+	
+	public static void main(String[] args) {
+		System.out.println(Integer.toBinaryString(22));
+		
+	}
+	
+	
 
 }

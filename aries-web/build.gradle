@@ -2,6 +2,7 @@ dependencies {
 	compile(
 		libraries.'javax.servlet',
 		libraries.'reflections',
+		libraries.'gson',
 	)
 	compile project(':aries-core')
 }
